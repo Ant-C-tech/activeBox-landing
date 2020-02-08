@@ -1,0 +1,44 @@
+//main:style.less
+
+// Fonts
+.cardo() {
+    font-family: 'Cardo-italic';
+    font-size  : 36px;
+    font-style : italic;
+    color:#fff;
+}
+
+.openSans_bold() {
+    font-family: 'OpenSans-bold';
+    font-size  : 65px;
+    font-weight: bold;
+    color:#fff;
+    line-height: 75px;
+}
+
+.raleway_regular() {
+    font-family: 'Raleway-regular';
+    font-size  : 22px;
+    color:#fff;
+    line-height: 35px;
+}
+
+.raleway_semibold() {
+    font-family: 'Raleway-semibold';
+    font-size  : 13px;
+    color:#fff;
+}
+
+.raleway_bold() {
+    font-family: 'Raleway-bold';
+    font-size  : 13px;
+    color:#fff;
+}
+
+// Media breakpoints
+
+.screen660(@rules){
+    @media screen and (max-width:660px){
+        @rules();
+    }
+}
