@@ -3,7 +3,7 @@
 .header {
     padding        : 38px 0;
     margin-bottom  : 132px;
-    border-bottom  : 1px solid #505369;
+    border-bottom  : 1px solid @border-grey;
     display        : flex;
     justify-content: space-between;
     position       : relative;
@@ -39,7 +39,7 @@
                 top          : 110px;
                 width        : 100%;
                 flex-basis   : 0;
-                background   : #53354A;
+                background   : @moreno;
                 text-align   : center;
                 border-radius: 10px;
                 padding      : 10px 0;
@@ -50,13 +50,13 @@
 
     &__menuItem {
         display   : block;
-        opacity   : 1;
+        opacity   : 0.75;
         transition: all 0.5s ease-in-out;
         .raleway_bold();
 
         &:hover {
             transform: scale(1.1);
-            opacity  : 0.8;
+            opacity  : 1;
         }
 
         .screen660( {
@@ -64,10 +64,10 @@
             }
 
         );
-    }
-
-    &__menuItem_active {
-        color: #e84545;
+        &_active{
+            color: @red;
+            transform: scale(1.1);
+        }
     }
 
     &__menuIcon {
@@ -86,19 +86,6 @@
         );
     }
 
-    &__iconItem {
-        display      : block;
-        position     : absolute;
-        height       : 3px;
-        width        : 100%;
-        background   : #fff;
-        border-radius: 1.5px;
-        opacity      : 1;
-        left         : 0;
-        transform    : rotate(0deg);
-        transition   : .25s ease-in-out;
-    }
-
     &__iconItem:nth-child(1) {
         top: 0px;
     }
@@ -112,26 +99,36 @@
         top: 24px;
     }
 
-}
+    &__iconItem {
+        display      : block;
+        position     : absolute;
+        height       : 3px;
+        width        : 100%;
+        background   : @white;
+        border-radius: 1.5px;
+        opacity      : 1;
+        left         : 0;
+        transform    : rotate(0deg);
+        transition   : .25s ease-in-out;
 
-#header__menuIcon.open .header__iconItem:nth-child(1) {
-    top  : 12px;
-    width: 0%;
-    left : 50%;
-}
+        .open &:nth-child(1) {
+            top  : 12px;
+            width: 0%;
+            left : 50%;
+        }
 
-#header__menuIcon.open .header__iconItem:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    transform        : rotate(45deg);
-}
+        .open &:nth-child(2) {
+            transform: rotate(45deg);
+        }
 
-#header__menuIcon.open .header__iconItem:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    transform        : rotate(-45deg);
-}
+        .open &:nth-child(3) {
+            transform: rotate(-45deg);
+        }
 
-#header__menuIcon.open .header__iconItem:nth-child(4) {
-    top  : 12px;
-    width: 0%;
-    left : 50%;
+        .open &:nth-child(4) {
+            top  : 12px;
+            width: 0%;
+            left : 50%;
+        }
+    }
 }

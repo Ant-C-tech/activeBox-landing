@@ -1,0 +1,56 @@
+//main:../style.less
+
+.works {
+    &__item {
+        display   : block;
+        width     : 25%;
+        background: @red;
+        position  : relative;
+
+        .screen1200( {
+                width : 50%;
+            }
+
+        );
+
+        .screen460( {
+            width : 100%;
+        }
+
+    );
+
+        &:hover {
+            .works__altPic {
+                opacity: 0.15;
+            }
+
+            .works__textBlock {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__altPic {
+        display   : block;
+        width     : 100%;
+        opacity   : 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__textBlock {
+        position  : absolute;
+        top       : 45%;
+        left      : calc((100% - 139.567px) / 2);
+        text-align: center;
+        opacity   : 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__title {
+        .raleway_bold()
+    }
+
+    &__subtitle {
+        .raleway_regular-small()
+    }
+}

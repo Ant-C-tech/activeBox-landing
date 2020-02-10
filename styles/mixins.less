@@ -5,40 +5,79 @@
     font-family: 'Cardo-italic';
     font-size  : 36px;
     font-style : italic;
-    color:#fff;
+    color      : @white;
 }
 
 .openSans_bold() {
     font-family: 'OpenSans-bold';
     font-size  : 65px;
     font-weight: bold;
-    color:#fff;
-    line-height: 75px;
+    color      : @white;
+    line-height: 1.1;
 }
 
 .raleway_regular() {
     font-family: 'Raleway-regular';
     font-size  : 22px;
-    color:#fff;
-    line-height: 35px;
+    color      : @white;
+    line-height: 1.5;
+}
+
+.raleway_regular-small() {
+    font-family: 'Raleway-regular';
+    font-size  : 14px;
+    color      : @white;
+
+}
+
+.raleway_regular-grey() {
+    font-family: 'Raleway-regular';
+    font-size  : 14px;
+    color      : @grey;
+    line-height: 1.5;
 }
 
 .raleway_semibold() {
     font-family: 'Raleway-semibold';
     font-size  : 13px;
-    color:#fff;
+    color      : @white;
 }
 
 .raleway_bold() {
-    font-family: 'Raleway-bold';
-    font-size  : 13px;
-    color:#fff;
+    font-family   : 'Raleway-bold';
+    font-size     : 13px;
+    color         : @white;
+    text-transform: uppercase;
+}
+
+.raleway_bold-darkgrey() {
+    font-family   : 'Raleway-bold';
+    font-size     : 14px;
+    color         : @dark-grey;
+    text-transform: uppercase;
 }
 
 // Media breakpoints
+.screen1200(@rules) {
+    @media screen and (max-width:1200px) {
+        @rules();
+    }
+}
 
-.screen660(@rules){
-    @media screen and (max-width:660px){
+.screen660(@rules) {
+    @media screen and (max-width:660px) {
+        @rules();
+    }
+}
+
+.screen460(@rules) {
+    @media screen and (max-width:460px) {
+        @rules();
+    }
+}
+
+.screen660H(@rules) {
+    @media screen and (max-height:660px) {
         @rules();
     }
 }

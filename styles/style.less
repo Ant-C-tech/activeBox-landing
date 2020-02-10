@@ -1,23 +1,37 @@
  // compress: true, sourceMap: true
 
 
-@import "general.css";
-@import "normalize.css";
-@import "fonts.less";
-@import "vars.less";
-@import "mixins.less";
+ @import "general.css";
+ @import "normalize.css";
+ @import "fonts.less";
+ @import "vars.less";
+ @import "mixins.less";
 
-@import "blocks/intro.less";
-@import "blocks/btn.less";
-@import "blocks/header.less";
+ @import "blocks/intro.less";
+ @import "blocks/btn.less";
+ @import "blocks/header.less";
+ @import "blocks/services.less";
+ @import "blocks/works.less";
+ @import "blocks/lightbox.less";
 
-body{
-    max-width: 1900px;
-}
+ body {
+     max-width             : 1900px;
+     margin: 0 auto;
+     -webkit-font-smoothing: antialiased;
+ }
 
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-    text-align: center;
-}
+ .container {
+     max-width : 1200px;
+     margin    : 0 auto;
+     padding   : 0 15px;
+     text-align: center;
+ }
+
+ .flexContainer {
+     display  : flex;
+     flex-wrap: wrap;
+
+     &-margin {
+         margin: 0 -20px;
+     };
+ }
