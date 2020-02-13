@@ -1,4 +1,4 @@
-var $links = $('.flexContainer').find('> a'),
+var $links = $('#works').find('> a'),
     $lightbox = $('.lightbox'),
     $overlay = $('.overlay'),
     targetImg;

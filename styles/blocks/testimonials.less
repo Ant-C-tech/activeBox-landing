@@ -1,0 +1,143 @@
+//main:../style.less
+
+.testimonials {
+
+    &__item {
+        display: flex;
+        width  : 100%;
+        .screen800( {
+           flex-wrap: wrap;
+          }
+    
+      );
+    }
+
+    &__slideItem {
+        width           : 50%;
+        background-color: @moreno;
+        .screen800( {
+            width           : 100%;
+            align-items: center;
+           }
+     
+       );
+    }
+
+    &__pic {
+        display: block;
+        width  : 100%;
+    }
+
+    &__textBlock{
+        .screen800( {
+            height: 250px;
+          }
+    
+      );
+
+      .screen460( {
+        height: 220px;
+      }
+
+  );
+    }
+
+    &__text {
+        .cardo();
+
+        max-width    : 500px;
+        margin-left  : 80px;
+        margin-bottom: 24px;
+        margin-right: 15px;
+
+        .screen1450( {
+            font-size: 30px;
+            margin-top: 15px;
+          }
+  
+      );
+
+      .screen1200( {
+        font-size: 18px;
+        margin-left  : 15px;
+      }
+
+  );
+
+  .screen800( {
+    font-size: 22px;
+  }
+
+);
+
+.screen460( {
+    font-size: 16px;
+  }
+
+);
+    }
+
+    &__author {
+        .raleway_bold();
+        max-width  : 500px;
+        margin-left: 80px;
+        margin-bottom: 60px;
+
+        .screen1450( {
+            margin-bottom: 15px;
+          }
+  
+      );
+
+      .screen1200( {
+        margin-left  : 15px;
+        font-size: 10px;
+      }
+
+  );
+    }
+
+}
+
+// Slider settings
+
+// .swiper-container {
+//     .screen800( {
+//         min-height: 900px;
+//       }
+
+//   );
+// }
+
+:root {
+    --swiper-theme-color: @white-primary;
+}
+
+.swiper-pagination-bullet {
+    background: @white-primary;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    text-align: start!important;
+    margin-left: 285px;
+    margin-bottom: 15px;
+
+    .screen1200( {
+        margin-left: 150px;
+      }
+
+  );
+
+  .screen800( {
+    margin-left: 0;
+  }
+
+);
+}
+
+.swiper-pagination-bullet {
+    width       : 12px !important;
+    height      : 12px !important;
+    margin-right: 8px !important;
+}

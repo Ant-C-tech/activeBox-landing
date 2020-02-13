@@ -3,6 +3,7 @@
 
  @import "general.css";
  @import "normalize.css";
+
  @import "fonts.less";
  @import "vars.less";
  @import "mixins.less";
@@ -13,6 +14,8 @@
  @import "blocks/services.less";
  @import "blocks/works.less";
  @import "blocks/lightbox.less";
+ @import "blocks/team.less";
+ @import "blocks/testimonials.less";
 
  body {
      max-width             : 1900px;
@@ -34,4 +37,11 @@
      &-margin {
          margin: 0 -20px;
      };
+     &-marginSmall {
+        margin: 0 -15px;
+    };
+    &-column{
+        flex-direction: column;
+        justify-content: center;
+    }
  }

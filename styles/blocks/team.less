@@ -1,0 +1,109 @@
+//main:../style.less
+
+.team {
+    margin: 100px 0;
+
+    .screen800( {
+            margin: 50px 0 20px;
+        }
+
+    );
+
+    &__item {
+        margin: 0 15px;
+        width : calc((100% / 4) - 30px);
+
+        .screen800( {
+                width        : calc((100% / 2) - 30px);
+                margin-bottom: 30px;
+            }
+
+        );
+
+        .screen460( {
+                width        : calc(100% - 30px);
+                margin-bottom: 15px;
+            }
+
+        );
+    }
+
+
+
+    &__pic {
+        display      : block;
+        width        : 100%;
+        margin-bottom: 23px;
+    }
+
+
+    &__title {
+        .raleway_regular-darkGrey();
+        text-align: left;
+    }
+
+
+
+    &__prof {
+        .raleway_regular-red();
+        margin-bottom: 20px;
+        text-align   : left;
+    }
+
+
+
+    &__text {
+        .raleway_regular-grey();
+        text-align   : left;
+        margin-bottom: 45px;
+    }
+
+
+
+    &__socialItem {
+
+        width          : 40px;
+        height         : 40px;
+        border         : 1px solid @light-grey;
+        border-radius  : 1px;
+        margin-right   : 5px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        transition     : all 0.3s ease-in-out;
+
+        &:hover {
+            border   : 1px solid @moreno;
+            transform: scale(1.1);
+
+            .team__ico {
+                color: @moreno;
+            }
+        }
+    }
+
+    &__ico {
+        color     : @light-grey;
+        font-size : 18px;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+
+.opacity{
+    opacity:0;
+}
+
+.opacity1 {
+    animation: opacity1 1s linear both;
+}
+
+@keyframes opacity1 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

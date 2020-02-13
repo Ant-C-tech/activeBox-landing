@@ -4,7 +4,6 @@
 .cardo() {
     font-family: 'Cardo-italic';
     font-size  : 36px;
-    font-style : italic;
     color      : @white;
 }
 
@@ -21,6 +20,20 @@
     font-size  : 22px;
     color      : @white;
     line-height: 1.5;
+}
+
+.raleway_regular-darkGrey() {
+    font-family: 'Raleway-regular';
+    font-size  : 22px;
+    line-height: 1.5;
+    color      : @dark-grey;
+}
+
+.raleway_regular-red() {
+    font-family: 'Raleway-regular';
+    font-size  : 13px;
+    line-height: 1.5;
+    color      : @red;
 }
 
 .raleway_regular-small() {
@@ -58,8 +71,21 @@
 }
 
 // Media breakpoints
+
+.screen1450(@rules) {
+    @media screen and (max-width:1450px) {
+        @rules();
+    }
+}
+
 .screen1200(@rules) {
     @media screen and (max-width:1200px) {
+        @rules();
+    }
+}
+
+.screen800(@rules) {
+    @media screen and (max-width:800px) {
         @rules();
     }
 }
@@ -76,6 +102,7 @@
     }
 }
 
+// =============================================
 .screen660H(@rules) {
     @media screen and (max-height:660px) {
         @rules();
