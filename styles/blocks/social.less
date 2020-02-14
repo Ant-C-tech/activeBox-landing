@@ -1,0 +1,49 @@
+//main:../style.less
+
+.social{
+    &__item {
+
+        width          : 40px;
+        height         : 40px;
+        border         : 1px solid @light-grey;
+        border-radius  : 1px;
+        margin-right   : 5px;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        transition     : all 0.3s ease-in-out;
+
+        &:hover {
+            border   : 1px solid @moreno;
+            transform: scale(1.1);
+
+            .social__ico {
+                color: @moreno;
+            }
+        }
+
+        &-white{
+            border         : 2px solid @white; 
+
+            &:hover {
+                border   : 2px solid @white;
+                transform: scale(1.1);
+    
+                .social__ico-white {
+                    color: @white;
+                }
+            }
+        }
+    }
+
+    &__ico {
+        color     : @light-grey;
+        font-size : 18px;
+        transition: all 0.3s ease-in-out;
+
+        &-white{
+            color     : @white;
+        }
+    }
+
+}
