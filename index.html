@@ -7,8 +7,9 @@
     <title>ActiveBox</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-    
+
     <script src="js/lazy.js"></script>
+    <script src="js/lazysizes.min.js"></script>
 </head>
 
 <body>
@@ -51,7 +52,7 @@
         <div class="container">
             <div class="flexContainer flexContainer-margin">
                 <div class="services__item">
-                    <img src="img/services/ico1.svg" class="services__icon" alt="#">
+                    <img data-src="img/services/ico1.svg" class="services__icon lazyload" alt="#">
                     <h3 class="services__title">
                         EASILY CUSTOMISED
                     </h3>
@@ -62,7 +63,7 @@
                     </p>
                 </div>
                 <div class="services__item">
-                    <img src="img/services/ico2.svg" class="services__icon" alt="#">
+                    <img data-src="img/services/ico2.svg" class="services__icon lazyload" alt="#">
                     <h3 class="services__title">
                         RESPONSIVE READY
                     </h3>
@@ -73,7 +74,7 @@
                     </p>
                 </div>
                 <div class="services__item">
-                    <img src="img/services/ico3.svg" class="services__icon" alt="#">
+                    <img data-src="img/services/ico3.svg" class="services__icon lazyload" alt="#">
                     <h3 class="services__title">
                         MODERN DESIGN
                     </h3>
@@ -84,7 +85,7 @@
                     </p>
                 </div>
                 <div class="services__item">
-                    <img src="img/services/ico4.svg" class="services__icon" alt="#">
+                    <img data-src="img/services/ico4.svg" class="services__icon lazyload" alt="#">
                     <h3 class="services__title">
                         CLEAN CODE
                     </h3>
@@ -95,7 +96,7 @@
                     </p>
                 </div>
                 <div class="services__item">
-                    <img src="img/services/ico5.svg" class="services__icon" alt="#">
+                    <img data-src="img/services/ico5.svg" class="services__icon lazyload" alt="#">
                     <h3 class="services__title">
                         READY TO SHIP
                     </h3>
@@ -106,7 +107,7 @@
                     </p>
                 </div>
                 <div class="services__item">
-                    <img src="img/services/ico6.svg" class="services__icon" alt="#">
+                    <img data-src="img/services/ico6.svg" class="services__icon lazyload" alt="#">
                     <h3 class="services__title">
                         DOWNLOAD FOR FREE
                     </h3>
@@ -219,9 +220,9 @@
         <div class="container">
             <div class="flexContainer flexContainer-marginSmall">
                 <div class="team__item">
-                    <picture class="team__pic team__pic1 opacity" id="team__pic">
-                        <source srcset="img/team/pic1.webp" type="image/webp">
-                        <img class="team__pic" data-src="img/team/pic1.jpg" alt="#">
+                    <picture class="team__pic team__pic1 opacity lazy" id="team__pic">
+                        <source data-srcset="img/team/pic1.webp" type="image/webp">
+                        <img class="team__pic" data-srcset="img/team/pic1.jpg" alt="#">
                     </picture>
                     <h3 class="team__title">Ruth Woods</h3>
                     <p class="team__prof">FOUNDER, CEO</p>
@@ -242,9 +243,9 @@
                 </div>
 
                 <div class="team__item">
-                    <picture class="team__pic team__pic2 opacity">
-                        <source srcset="img/team/pic2.webp" type="image/webp">
-                        <img class="team__pic" data-src="img/team/pic2.jpg" alt="#">
+                    <picture class="team__pic team__pic2 opacity lazy">
+                        <source data-srcset="img/team/pic2.webp" type="image/webp">
+                        <img class="team__pic" data-srcsetc="img/team/pic2.jpg" alt="#">
                     </picture>
                     <h3 class="team__title">Timothy Reed</h3>
                     <p class="team__prof">CO-FOUNDER, DEVELOPER</p>
@@ -265,9 +266,9 @@
                 </div>
 
                 <div class="team__item">
-                    <picture class="team__pic team__pic3 opacity">
-                        <source srcset="img/team/pic3.webp" type="image/webp">
-                        <img class="team__pic" data-src="img/team/pic3.jpg" alt="#">
+                    <picture class="team__pic team__pic3 opacity lazy">
+                        <source data-srcset="img/team/pic3.webp" type="image/webp">
+                        <img class="team__pic" data-srcset="img/team/pic3.jpg" alt="#">
                     </picture>
                     <h3 class="team__title">Victoria Valdez</h3>
                     <p class="team__prof">UI DESIGNER</p>
@@ -288,9 +289,9 @@
                 </div>
 
                 <div class="team__item">
-                    <picture class="team__pic team__pic4 opacity">
-                        <source srcset="img/team/pic4.webp" type="image/webp">
-                        <img class="team__pic" data-src="img/team/pic4.jpg" alt="#">
+                    <picture class="team__pic team__pic4 opacity lazy">
+                        <source data-srcset="img/team/pic4.webp" type="image/webp">
+                        <img class="team__pic" data-srcset="img/team/pic4.jpg" alt="#">
                     </picture>
                     <h3 class="team__title">Beverly Little</h3>
                     <p class="team__prof">DATA SCIENTIST</p>
@@ -323,9 +324,9 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture class="testimonials__pic">
+                            <picture>
                                 <source srcset="img/testimonials/slide1.webp" type="image/webp">
-                                <img class="testimonials__pic" data-src="img/testimonials/slide1.jpg" alt="#">
+                                <img class="testimonials__pic" src="img/testimonials/slide1.jpg" alt="#">
                             </picture>
                         </div>
                         <div
@@ -342,9 +343,9 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture class="testimonials__pic">
+                            <picture>
                                 <source srcset="img/testimonials/slide2.webp" type="image/webp">
-                                <img class="testimonials__pic" data-src="img/testimonials/slide2.jpg" alt="#">
+                                <img class="testimonials__pic" src="img/testimonials/slide2.jpg" alt="#">
                             </picture>
                         </div>
                         <div
@@ -360,9 +361,9 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture class="testimonials__pic">
+                            <picture>
                                 <source srcset="img/testimonials/slide3.webp" type="image/webp">
-                                <img class="testimonials__pic" data-src="img/testimonials/slide3.jpg" alt="#">
+                                <img class="testimonials__pic" src="img/testimonials/slide3.jpg" alt="#">
                             </picture>
                         </div>
                         <div
@@ -377,9 +378,9 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture class="testimonials__pic">
+                            <picture>
                                 <source srcset="img/testimonials/slide4.webp" type="image/webp">
-                                <img class="testimonials__pic" data-src="img/testimonials/slide4.jpg" alt="#">
+                                <img class="testimonials__pic" src="img/testimonials/slide4.jpg" alt="#">
                             </picture>
                         </div>
                         <div
@@ -395,9 +396,9 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture class="testimonials__pic">
+                            <picture>
                                 <source srcset="img/testimonials/slide5.webp" type="image/webp">
-                                <img class="testimonials__pic" data-src="img/testimonials/slide5.jpg" alt="#">
+                                <img class="testimonials__pic" src="img/testimonials/slide5.jpg" alt="#">
                             </picture>
                         </div>
                         <div
@@ -412,9 +413,9 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture class="testimonials__pic">
+                            <picture>
                                 <source srcset="img/testimonials/slide6.webp" type="image/webp">
-                                <img class="testimonials__pic" data-src="img/testimonials/slide6.jpg" alt="#">
+                                <img class="testimonials__pic" src="img/testimonials/slide6.jpg" alt="#">
                             </picture>
                         </div>
                         <div
