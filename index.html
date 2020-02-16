@@ -16,7 +16,7 @@
     <section class="intro" id="intro">
         <div class="container">
             <header class="header">
-                <img src="img/intro/logo.png" class="header__logo" alt="Logo">
+                <img data-src="img/intro/logo.png" class="header__logo lazyload" alt="Logo">
                 <div class="header__menu">
                     <a class="header__menuItem header__menuItem_active" href="#">FEATURES</a>
                     <a rel="m_PageScroll2id" class="header__menuItem" href="#works">WORKS</a>
@@ -323,10 +323,8 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture>
-                                <source srcset="img/testimonials/slide1.webp" type="image/webp">
-                                <img class="testimonials__pic" src="img/testimonials/slide1.jpg" alt="#">
-                            </picture>
+                            <img class="testimonials__pic swiper-lazy" data-src="img/testimonials/slide1.webp" alt="#">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div
                             class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
@@ -342,10 +340,8 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture>
-                                <source srcset="img/testimonials/slide2.webp" type="image/webp">
-                                <img class="testimonials__pic" src="img/testimonials/slide2.jpg" alt="#">
-                            </picture>
+                            <img class="testimonials__pic swiper-lazy" data-src="img/testimonials/slide2.webp" alt="#">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div
                             class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
@@ -360,10 +356,8 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture>
-                                <source srcset="img/testimonials/slide3.webp" type="image/webp">
-                                <img class="testimonials__pic" src="img/testimonials/slide3.jpg" alt="#">
-                            </picture>
+                            <img class="testimonials__pic swiper-lazy" data-src="img/testimonials/slide3.webp" alt="#">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div
                             class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
@@ -377,10 +371,8 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture>
-                                <source srcset="img/testimonials/slide4.webp" type="image/webp">
-                                <img class="testimonials__pic" src="img/testimonials/slide4.jpg" alt="#">
-                            </picture>
+                            <img class="testimonials__pic swiper-lazy" data-src="img/testimonials/slide4.webp" alt="#">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div
                             class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
@@ -395,10 +387,8 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture>
-                                <source srcset="img/testimonials/slide5.webp" type="image/webp">
-                                <img class="testimonials__pic" src="img/testimonials/slide5.jpg" alt="#">
-                            </picture>
+                            <img class="testimonials__pic swiper-lazy" data-src="img/testimonials/slide5.webp" alt="#">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div
                             class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
@@ -412,10 +402,8 @@
                 <div class="swiper-slide">
                     <div class="testimonials__item">
                         <div class="testimonials__slideItem">
-                            <picture>
-                                <source srcset="img/testimonials/slide6.webp" type="image/webp">
-                                <img class="testimonials__pic" src="img/testimonials/slide6.jpg" alt="#">
-                            </picture>
+                            <img class="testimonials__pic swiper-lazy" data-src="img/testimonials/slide6.webp" alt="#">
+                            <div class="swiper-lazy-preloader"></div>
                         </div>
                         <div
                             class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
@@ -472,7 +460,8 @@
                     </div>
                 </div>
                 <div class="footer__item footer__item-thirdItem">
-                    <h3 class="footer__title"><a class="header__menuItem" rel="m_PageScroll2id" href="#intro">ABOUT ACTIVEBOX</a></h3>
+                    <h3 class="footer__title"><a class="header__menuItem" rel="m_PageScroll2id" href="#intro">ABOUT
+                            ACTIVEBOX</a></h3>
                     <p class="footer__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
                         ullamcorper
                         nulla
@@ -487,7 +476,8 @@
     <div class="subfooter">
         <div class="container">
             <p class="subfooter__text">Copyright © 2015 ActiveBox. All Rights Reserved</p>
-            <p class="subfooter__text">Made with <img class="subfooter__ico" src="img/subfooter/heart.svg" alt="love"> <span class="subfooter__author"> by Kamal Chaneman</span></p>
+            <p class="subfooter__text">Made with <img class="subfooter__ico lazyload" data-src="img/subfooter/heart.svg"
+                    alt="love"> <span class="subfooter__author"> by Kamal Chaneman</span></p>
         </div>
     </div>
 
@@ -500,7 +490,7 @@
 
 
     <!-- Scripts -->
-    <script src="js/jquery-3.4.1.min.js"></script> 
+    <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
     <script>
         (function ($) {
@@ -511,9 +501,9 @@
     </script>
     <script src="js/script.js"></script>
     <script src="js/gallery.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="js/lazy.js"></script>
     <script src="js/lazysizes.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
 </body>
 

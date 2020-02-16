@@ -73,6 +73,9 @@ $(document).ready(function () {
         delay: 2500,
         disableOnInteraction: false,
       },  
+      lazy: {
+        loadPrevNext: true,
+      },
 
     })
   });
