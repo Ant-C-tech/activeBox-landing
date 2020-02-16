@@ -7,8 +7,8 @@
     <title>ActiveBox</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
     <link rel="stylesheet" href="styles/style.css">
-
-
+    <link href="styles/fontawesome/fontawesome.min.css" rel="stylesheet">
+    <link href="styles/fontawesome/brands.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -484,15 +484,35 @@
     <!-- SUBFOOTER -->
 
     <!-- Styles -->
-    <link href="styles/fontawesome/fontawesome.min.css" rel="stylesheet">
-    <link href="styles/fontawesome/brands.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 
     <!-- Scripts -->
+
+    <!-- Отложенная загрузка css -->
+    
+    <script type="text/javascript">
+        /* CSS #1 */
+        var giftofspeed = document.createElement('link');
+        giftofspeed.rel = 'stylesheet';
+        giftofspeed.href = 'styles/fontawesome/fontawesome.min.css';
+        giftofspeed.type = 'text/css';
+        var godefer = document.getElementsByTagName('link')[0];
+        godefer.parentNode.insertBefore(giftofspeed, godefer);
+
+        /* CSS #2 */
+        var giftofspeed = document.createElement('link');
+        giftofspeed.rel = 'stylesheet';
+        giftofspeed.href = 'styles/fontawesome/brands.min.css';
+        giftofspeed.type = 'text/css';
+        var godefer = document.getElementsByTagName('link')[0];
+        godefer.parentNode.insertBefore(giftofspeed, godefer);
+    </script>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-    <script>
+    <script type="text/javascript">
         (function ($) {
             $(window).on("load", function () {
                 $("a[rel='m_PageScroll2id']").mPageScroll2id();
