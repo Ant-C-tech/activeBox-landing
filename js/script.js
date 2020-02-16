@@ -74,7 +74,7 @@ $(document).ready(function () {
         disableOnInteraction: false,
       },  
       lazy: {
-        loadPrevNext: true,
+        loadPrevNext: false,
       },
 
     })
