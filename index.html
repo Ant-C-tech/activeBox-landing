@@ -11,7 +11,7 @@
 
 <body>
     <!-- Intro -->
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="container">
             <header class="header">
                 <img src="img/intro/logo.png" class="header__logo" alt="Logo">
@@ -470,7 +470,7 @@
                     </div>
                 </div>
                 <div class="footer__item footer__item-thirdItem">
-                    <h3 class="footer__title">ABOUT ACTIVEBOX</h3>
+                    <h3 class="footer__title"><a class="header__menuItem" rel="m_PageScroll2id" href="#intro">ABOUT ACTIVEBOX</a></h3>
                     <p class="footer__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec
                         ullamcorper
                         nulla
@@ -499,6 +499,14 @@
 
     <!-- Scripts -->
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script>
+        (function ($) {
+            $(window).on("load", function () {
+                $("a[rel='m_PageScroll2id']").mPageScroll2id();
+            });
+        })(jQuery);
+    </script>
     <script src="js/script.js"></script>
     <script src="js/gallery.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
