@@ -36,6 +36,7 @@
  }
 
  .flexContainer {
+     display  : -webkit-box;
      display  : flex;
      flex-wrap: wrap;
 
@@ -46,7 +47,10 @@
         margin: 0 -15px;
     };
     &-column{
-        flex-direction: column;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-pack: center;
+                justify-content: center;
     }
  }

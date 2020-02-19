@@ -8,14 +8,19 @@
         border         : 1px solid @light-grey;
         border-radius  : 1px;
         margin-right   : 5px;
+        display        : -webkit-box;
         display        : flex;
-        align-items    : center;
-        justify-content: center;
+        -webkit-box-align    : center;
+                align-items    : center;
+        -webkit-box-pack: center;
+                justify-content: center;
+        -webkit-transition     : all 0.3s ease-in-out;
         transition     : all 0.3s ease-in-out;
 
         &:hover {
             border   : 1px solid @moreno;
-            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+                    transform: scale(1.1);
 
             .social__ico {
                 color: @moreno;
@@ -27,7 +32,8 @@
 
             &:hover {
                 border   : 2px solid @white;
-                transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                        transform: scale(1.1);
     
                 .social__ico-white {
                     color: @white;
@@ -39,6 +45,7 @@
     &__ico {
         color     : @light-grey;
         font-size : 18px;
+        -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
 
         &-white{
