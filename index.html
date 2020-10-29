@@ -7,6 +7,10 @@
     <meta name="description" content="Some page description..." />
     <title>ActiveBox</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -18,9 +22,9 @@
             <header class="header">
                 <img src="#" data-src="img/intro/logo.png" class="header__logo lazyload" alt="Logo">
                 <div class="header__menu">
-                    <a rel="m_PageScroll2id" class="header__menuItem" href="#services">FEATURES</a>
-                    <a rel="m_PageScroll2id" class="header__menuItem" href="#works">WORKS</a>
-                    <a rel="m_PageScroll2id" class="header__menuItem" href="#team">OUR TEAM</a>
+                    <a class="header__menuItem" href="#services">FEATURES</a>
+                    <a class="header__menuItem" href="#works">WORKS</a>
+                    <a class="header__menuItem" href="#team">OUR TEAM</a>
                     <a class="header__menuItem" href="#testimonials">TESTIMONIALS</a>
                     <a class="header__menuItem" href="#footer">DOWNLOAD</a>
                 </div>
@@ -242,7 +246,7 @@
                 <div class="team__item">
                     <picture class="team__pic team__pic2 opacity lazy">
                         <source srcset="#" data-srcset="img/team/pic2.webp" type="image/webp">
-                        <img class="team__pic" src="#" data-srcsetc="img/team/pic2.jpg" alt="#">
+                        <img class="team__pic" src="#" data-srcset="img/team/pic2.jpg" alt="#">
                     </picture>
                     <h3 class="team__title">Timothy Reed</h3>
                     <p class="team__prof">CO-FOUNDER, DEVELOPER</p>
@@ -314,108 +318,111 @@
 
     <!-- TESTIMONIALS -->
     <div class="testimonials" id="testimonials">
-        <div class="swiper-container">
 
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                    <div class="testimonials__item">
-                        <div class="testimonials__slideItem">
-                            <img class="testimonials__pic swiper-lazy" src="#" data-src="img/testimonials/slide1_min.jpg" data-srcset="img/testimonials/slide1.webp" alt="#">
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div
-                            class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
-                            <p class="testimonials__text"> “Integer posuere erat a ante venenatis dapibus posuere velit
-                                aliquet. Donec sed odio
-                                dui.
-                                Aenean eu leo quam...”
-                                <p class="testimonials__author">SUSAN SIMS, INTERACTION DESIGNER AT XYZ</p>
-                                <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="testimonials__item">
+                <div class="testimonials__slideItem">
+                    <picture class="lazy">
+                        <source srcset="#" data-srcset="img/testimonials/slide1.webp" type="image/webp">
+                        <img class="testimonials__pic" src="#" data-srcset="img/testimonials/slide1_min.jpg" alt="#">
+                    </picture>
                 </div>
-                <div class="swiper-slide">
-                    <div class="testimonials__item">
-                        <div class="testimonials__slideItem">
-                            <img class="testimonials__pic swiper-lazy" src="#" data-src="img/testimonials/slide2_min.jpg" data-srcset="img/testimonials/slide2.webp" alt="#">
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div
-                            class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
-                            <p class="testimonials__text"> “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Optio nihil soluta, consequuntur voluptatem, illum quae temporibus minima iure quod quo
-                                reiciendis, ipsam nemo. Ipsa, repudiandae?”
-                                <p class="testimonials__author">JOHN DOE, UI DESIGNER</p>
-                                <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonials__item">
-                        <div class="testimonials__slideItem">
-                            <img class="testimonials__pic swiper-lazy" src="#" data-src="img/testimonials/slide3_min.jpg" data-srcset="img/testimonials/slide3.webp" alt="#">
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div
-                            class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
-                            <p class="testimonials__text"> “Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Provident eum ratione asperiores qui eaque odio repudiandae, molestiae velit?”
-                                <p class="testimonials__author">SAMANTHA SMITH, DESIGNER</p>
-                                <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonials__item">
-                        <div class="testimonials__slideItem">
-                            <img class="testimonials__pic swiper-lazy" src="#" data-src="img/testimonials/slide4_min.jpg" data-srcset="img/testimonials/slide4.webp" alt="#">
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div
-                            class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
-                            <p class="testimonials__text"> “Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                                veritatis dolorem officiis quas exercitationem beatae deleniti reprehenderit,
-                                temporibus, quaerat, modi quod! Totam ex, aliquid doloremque odit repellat nulla?”
-                                <p class="testimonials__author">Caroline Anstey, INTERACTION DESIGNER AT XYZ</p>
-                                <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonials__item">
-                        <div class="testimonials__slideItem">
-                            <img class="testimonials__pic swiper-lazy" src="#" data-src="img/testimonials/slide5_min.jpg" data-srcset="img/testimonials/slide5.webp" alt="#">
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div
-                            class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
-                            <p class="testimonials__text"> “Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Eaque culpa, dolor id explicabo ex tenetur voluptas laborum modi commodi praesentium.”
-                                <p class="testimonials__author">Ricardo Álamo, CEO</p>
-                                <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="testimonials__item">
-                        <div class="testimonials__slideItem">
-                            <img class="testimonials__pic swiper-lazy" src="#" data-src="img/testimonials/slide6_min.jpg" data-srcset="img/testimonials/slide6.webp" alt="#">
-                            <div class="swiper-lazy-preloader"></div>
-                        </div>
-                        <div
-                            class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
-                            <p class="testimonials__text"> “Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                Facilis, quam pariatur? Id quidem maiores porro! Totam voluptate inventore architecto
-                                distinctio tenetur aut.”
-                                <p class="testimonials__author">Rebeca Grynspan, senior manager</p>
-                                <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
+                <div
+                    class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
+                    <p class="testimonials__text"> “Integer posuere erat a ante venenatis dapibus posuere velit
+                        aliquet. Donec sed odio
+                        dui.
+                        Aenean eu leo quam...”
+                    <p class="testimonials__author">SUSAN SIMS, INTERACTION DESIGNER AT XYZ</p>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-
         </div>
+        <div class="swiper-slide">
+            <div class="testimonials__item">
+                <div class="testimonials__slideItem">
+                    <picture class="lazy">
+                        <source srcset="#" data-srcset="img/testimonials/slide2.webp" type="image/webp">
+                        <img class="testimonials__pic" src="#" data-srcset="img/testimonials/slide2_min.jpg" alt="#">
+                    </picture>
+                </div>
+                <div
+                    class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
+                    <p class="testimonials__text"> “Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Optio nihil soluta, consequuntur voluptatem, illum quae temporibus minima iure quod quo
+                        reiciendis, ipsam nemo. Ipsa, repudiandae?”
+                    <p class="testimonials__author">JOHN DOE, UI DESIGNER</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonials__item">
+                <div class="testimonials__slideItem">
+                    <picture class="lazy">
+                        <source srcset="#" data-srcset="img/testimonials/slide3.webp" type="image/webp">
+                        <img class="testimonials__pic" src="#" data-srcset="img/testimonials/slide3_min.jpg" alt="#">
+                    </picture>
+                </div>
+                <div
+                    class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
+                    <p class="testimonials__text"> “Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Provident eum ratione asperiores qui eaque odio repudiandae, molestiae velit?”
+                    <p class="testimonials__author">SAMANTHA SMITH, DESIGNER</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonials__item">
+                <div class="testimonials__slideItem">
+                    <picture class="lazy">
+                        <source srcset="#" data-srcset="img/testimonials/slide4.webp" type="image/webp">
+                        <img class="testimonials__pic" src="#" data-srcset="img/testimonials/slide4_min.jpg" alt="#">
+                    </picture>
+                </div>
+                <div
+                    class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
+                    <p class="testimonials__text"> “Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                        veritatis dolorem officiis quas exercitationem beatae deleniti reprehenderit,
+                        temporibus, quaerat, modi quod! Totam ex, aliquid doloremque odit repellat nulla?”
+                    <p class="testimonials__author">Caroline Anstey, INTERACTION DESIGNER AT XYZ</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonials__item">
+                <div class="testimonials__slideItem">
+                    <picture class="lazy">
+                        <source srcset="#" data-srcset="img/testimonials/slide5.webp" type="image/webp">
+                        <img class="testimonials__pic" src="#" data-srcset="img/testimonials/slide5_min.jpg" alt="#">
+                    </picture>
+                </div>
+                <div
+                    class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
+                    <p class="testimonials__text"> “Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eaque culpa, dolor id explicabo ex tenetur voluptas laborum modi commodi praesentium.”
+                    <p class="testimonials__author">Ricardo Álamo, CEO</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-slide">
+            <div class="testimonials__item">
+                <div class="testimonials__slideItem">
+                    <picture class="lazy">
+                        <source srcset="#" data-srcset="img/testimonials/slide6.webp" type="image/webp">
+                        <img class="testimonials__pic" src="#" data-srcset="img/testimonials/slide6_min.jpg" alt="#">
+                    </picture>
+                </div>
+                <div
+                    class="testimonials__slideItem testimonials__slideItem-textBlock flexContainer flexContainer-column">
+                    <p class="testimonials__text"> “Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Facilis, quam pariatur? Id quidem maiores porro! Totam voluptate inventore architecto
+                        distinctio tenetur aut.”
+                    <p class="testimonials__author">Rebeca Grynspan, senior manager</p>
+                </div>
+            </div>
+        </div>
+
     </div>
     <!-- TESTIMONIALS -->
 
@@ -445,8 +452,7 @@
                             <a class="social__item social__item-white" href="https://www.facebook.com/" target="_blank">
                                 <i class="fab fa-facebook-f social__ico social__ico-white"></i>
                             </a>
-                            <a class="social__item social__item-white" href="https://twitter.com/"
-                                target="_blank">
+                            <a class="social__item social__item-white" href="https://twitter.com/" target="_blank">
                                 <i class="fab fa-twitter social__ico social__ico-white"></i>
                             </a>
                             <a class="social__item social__item-white" href="https://www.linkedin.com/" target="_blank">
@@ -472,16 +478,14 @@
     <div class="subfooter">
         <div class="container">
             <p class="subfooter__text">Copyright © 2015 ActiveBox. All Rights Reserved</p>
-            <p class="subfooter__text">Made with <img class="subfooter__ico lazyload" src="#" data-src="img/subfooter/heart.svg"
-                    alt="love"> <span class="subfooter__author"> by Kamal Chaneman</span></p>
+            <p class="subfooter__text">Made with <img class="subfooter__ico lazyload" src="#"
+                    data-src="img/subfooter/heart.svg" alt="love"> <span class="subfooter__author"> by Kamal
+                    Chaneman</span></p>
         </div>
     </div>
-
     <!-- SUBFOOTER -->
 
     <!-- Styles -->
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link href="styles/fontawesome/fontawesome.min.css" rel="stylesheet">
     <link href="styles/fontawesome/brands.min.css" rel="stylesheet">
 
@@ -507,20 +511,16 @@
         godefer.parentNode.insertBefore(giftofspeed, godefer);
     </script>
 
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery.malihu.PageScroll2id.min.js"></script>
-    <script>
-        (function ($) {
-            $(window).on("load", function () {
-                $("a[rel='m_PageScroll2id']").mPageScroll2id();
-            });
-        })(jQuery);
+
     </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="js/animateCssSlider.jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/lazy.js"></script>
     <script src="js/lazysizes.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
 
 
 

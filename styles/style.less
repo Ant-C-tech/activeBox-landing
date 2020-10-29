@@ -1,56 +1,59 @@
- // compress: true, sourceMap: true
+// compress: true, sourceMap: true
 
+@import "general.css";
+@import "normalize.css";
 
- @import "general.css";
- @import "normalize.css";
+@import "fonts.less";
+@import "vars.less";
+@import "mixins.less";
 
- @import "fonts.less";
- @import "vars.less";
- @import "mixins.less";
+@import "blocks/intro.less";
+@import "blocks/btn.less";
+@import "blocks/header.less";
+@import "blocks/services.less";
+@import "blocks/works.less";
+@import "blocks/lightbox.less";
+@import "blocks/team.less";
+@import "blocks/social.less";
+@import "blocks/testimonials.less";
+@import "blocks/download.less";
+@import "blocks/footer.less";
+@import "blocks/subfooter_.less";
 
- @import "blocks/intro.less";
- @import "blocks/btn.less";
- @import "blocks/header.less";
- @import "blocks/services.less";
- @import "blocks/works.less";
- @import "blocks/lightbox.less";
- @import "blocks/team.less";
- @import "blocks/social.less";
- @import "blocks/testimonials.less";
- @import "blocks/download.less";
- @import "blocks/footer.less";
- @import "blocks/subfooter_.less";
+html {
+  scroll-behavior: smooth;
+}
 
- body {
-     max-width             : 1900px;
-     margin: 0 auto;
-     -webkit-font-smoothing: antialiased;
-     background-color: @white;
- }
+body {
+  max-width: 1900px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  background-color: @white;
+}
 
- .container {
-     max-width : 1200px;
-     margin    : 0 auto;
-     padding   : 0 15px;
-     text-align: center;
- }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+}
 
- .flexContainer {
-     display  : -webkit-box;
-     display  : flex;
-     flex-wrap: wrap;
+.flexContainer {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
 
-     &-margin {
-         margin: 0 -20px;
-     };
-     &-marginSmall {
-        margin: 0 -15px;
-    };
-    &-column{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-                flex-direction: column;
-        -webkit-box-pack: center;
-                justify-content: center;
-    }
- }
+  &-margin {
+    margin: 0 -20px;
+  }
+  &-marginSmall {
+    margin: 0 -15px;
+  }
+  &-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+  }
+}

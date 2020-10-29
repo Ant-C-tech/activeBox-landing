@@ -4,12 +4,9 @@ $(document).ready(function () {
     $('#header__menuIcon').click(function () {
         $(this).toggleClass('open');
     });
-});
 
-//Выпадение бургер-меню
 
-$(function () {
-
+    //Выпадение бургер-меню
     $('#header__menuIcon').on('click', function () {
 
         $('.header__menu').slideToggle(300, function () {
@@ -22,11 +19,7 @@ $(function () {
 
     })
 
-});
-
-// Запуск анимации team по скроллу
-
-$(function () {
+    // Запуск анимации team по скроллу
     var colegue1 = $(".team__pic1"),
         colegue2 = $(".team__pic2"),
         colegue3 = $(".team__pic3"),
@@ -56,28 +49,19 @@ $(function () {
             }
         });
     });
-});
 
-// Swiper slider
-
-$(document).ready(function () {
-    //initialize swiper when document ready
-    var mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        lazy: true,
-        lazy: {
-            loadPrevNext: true,
-            loadPrevNextAmount: 1,
-        },
-        watchSlidesVisibility: true,
+    $('#testimonials').animateCssSlider({
+        contentSrc: 'html',
+        autoplayInterval: 4500,
+        animationType: 'bounceOutInLeft/bounceOutInRight',
+        animationTime: 'animate__slow',
+        hoverAnimation: true,
+        hoverAnimationType: 'pulse',
+        constSliderHeight: true,
+        overflowHidden: true,
+        control: false,
     })
 });
+
+
+
